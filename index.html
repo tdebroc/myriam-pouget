@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La voix des anges — Myriam Pouget · Chant pour vos célébrations</title>
+  <meta name="description" content="La voix des anges — Myriam Pouget, soprano diplômée du Conservatoire. Animation par le chant de vos messes de mariage, funérailles et célébrations religieuses." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">
+      <svg class="nav__dove" viewBox="0 0 100 80" aria-hidden="true"><use href="#dove" /></svg>
+      <span>La voix des anges</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#about">Qui suis-je</a>
+      <a href="#services">Prestations</a>
+      <a href="#plus">Mes petits +</a>
+      <a href="#contact" class="nav__cta">Me contacter</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- ====== SVG DEFINITIONS (dove line drawing) ====== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="dove" viewBox="0 0 100 80">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 46 C30 30 46 26 58 30 C64 32 68 37 70 42 C74 40 79 41 82 45 C79 47 75 47 72 46 C71 52 66 57 58 58 C50 59 40 56 34 52 C40 54 47 55 52 53 C44 53 30 52 22 44 C28 46 35 47 40 46 C31 45 22 44 18 46 Z"/>
+        <path d="M58 30 C52 20 40 14 28 14 C36 18 42 24 45 30"/>
+        <path d="M45 30 C38 24 28 22 20 24 C28 26 34 30 38 35"/>
+        <path d="M38 35 C31 32 22 33 16 38 C24 38 31 40 35 44"/>
+        <circle cx="66" cy="41" r="1" fill="currentColor" stroke="none"/>
+        <path d="M82 45 C86 40 90 32 92 24"/>
+        <path d="M92 24 C90 25 88 25 87 24 M92 24 C91 26 91 28 92 29 M89 28 C87 29 85 29 84 28 M89 28 C88 30 88 32 89 33 M86 32 C84 33 82 33 81 32 M86 32 C85 34 85 36 86 37"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <svg class="hero__dove floaty" viewBox="0 0 100 80" aria-hidden="true"><use href="#dove" /></svg>
+        <p class="hero__eyebrow reveal">Myriam Pouget · Soprano</p>
+        <h1 class="hero__title reveal">La voix des anges</h1>
+        <p class="hero__sub reveal">Animation par le chant de vos<br /><em>messes de mariage</em> &amp; <em>funérailles</em></p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--solid">Me contacter</a>
+          <a href="#about" class="btn btn--ghost">Découvrir</a>
+        </div>
+      </div>
+
+      <div class="hero__photo reveal">
+        <div class="hero__photo-frame">
+          <img src="assets/myriam.png" alt="Myriam Pouget chantant lors d'une célébration" />
+        </div>
+        <span class="hero__glow" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Défiler"><span></span></a>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__media reveal">
+        <div class="about__frame">
+          <img src="assets/myriam.png" alt="Myriam Pouget, chanteuse soliste" />
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-eyebrow reveal">Bonjour !</p>
+        <h2 class="section-title reveal">Je m'appelle <span>Myriam Pouget</span></h2>
+        <p class="reveal">Diplômée du Conservatoire (piano, violon, chant), cela fait dix ans que j'accompagne par le chant des célébrations religieuses, en tant que soliste ou chef de chœur.</p>
+        <p class="reveal">Pour servir et embellir votre célébration, je vous partage ma voix de soprano, avec sa couleur toute de <em>pureté</em> et de <em>légèreté</em>.</p>
+        <div class="about__badges reveal">
+          <span>10 ans d'expérience</span>
+          <span>Conservatoire</span>
+          <span>Soprano soliste</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section class="services" id="services">
+    <div class="services__inner">
+      <div class="services__head">
+        <p class="section-eyebrow reveal">Ce que je propose</p>
+        <h2 class="section-title reveal">Mes prestations</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="card__num">01</span>
+          <h3>Animation de la cérémonie</h3>
+          <p>Accompagnement de votre messe ou de votre célébration du début à la fin.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">02</span>
+          <h3>Chant soliste</h3>
+          <p>Une voix de soprano pour porter les moments forts de votre cérémonie.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">03</span>
+          <h3>Coordination de musiciens</h3>
+          <p>Coordination éventuelle des musiciens choisis par vos soins (orgue, guitare…).</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">04</span>
+          <h3>Aide &amp; conseil</h3>
+          <p>Accompagnement dans le choix des chants adaptés à votre célébration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MES PETITS + ====== -->
+  <section class="plus" id="plus">
+    <div class="plus__inner">
+      <div class="plus__head reveal">
+        <svg class="plus__stars" viewBox="0 0 120 70" aria-hidden="true">
+          <path class="twinkle" d="M30 12 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+          <path class="twinkle" style="--d:.4s" d="M62 30 l2.4 6.4 6.4 2.4 -6.4 2.4 -2.4 6.4 -2.4 -6.4 -6.4 -2.4 6.4 -2.4 z"/>
+          <path class="twinkle" style="--d:.8s" d="M92 8 l2 5.4 5.4 2 -5.4 2 -2 5.4 -2 -5.4 -5.4 -2 5.4 -2 z"/>
+        </svg>
+        <h2 class="section-title">Mes petits +</h2>
+      </div>
+      <div class="plus__grid">
+        <article class="plus__item reveal">
+          <h3>Un vrai souci du beau</h3>
+          <p>J'ai à cœur que la cérémonie soit <em>belle et profonde</em> — chaque chant est choisi et soigné pour toucher.</p>
+        </article>
+        <article class="plus__item reveal">
+          <h3>Une liturgie maîtrisée</h3>
+          <p>Une connaissance approfondie de la liturgie, pour un accompagnement juste et respectueux du sens de la célébration.</p>
+        </article>
+      </div>
+
+      <div class="pricing reveal">
+        <p><strong>Tarifs</strong> — variables selon le lieu et le temps de préparation.</p>
+        <a href="#contact" class="btn btn--solid">Demander un devis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <svg class="contact__dove floaty" viewBox="0 0 100 80" aria-hidden="true"><use href="#dove" /></svg>
+      <p class="section-eyebrow reveal" style="color:var(--cream)">Parlons de votre célébration</p>
+      <h2 class="contact__title reveal">Me contacter</h2>
+      <p class="contact__lead reveal">C'est avec joie que j'échangerai avec vous sur votre projet.</p>
+
+      <div class="contact__cards">
+        <a class="contact__card reveal" href="tel:+33781208369">
+          <span class="contact__icon" aria-hidden="true">✆</span>
+          <span class="contact__label">Téléphone</span>
+          <span class="contact__value">07 81 20 83 69</span>
+        </a>
+        <a class="contact__card reveal" href="mailto:mp.lavoixdesanges@gmail.com">
+          <span class="contact__icon" aria-hidden="true">✉</span>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">mp.lavoixdesanges@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <svg class="footer__dove" viewBox="0 0 100 80" aria-hidden="true"><use href="#dove" /></svg>
+      <span>La voix des anges</span>
+    </div>
+    <p>Myriam Pouget · Soprano · Chant pour vos célébrations</p>
+    <p class="footer__legal">© <span id="year"></span> La voix des anges — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
